@@ -1,0 +1,97 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before{
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #080710;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input, button{
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+.login{
+    width: 400px;
+    position: relative;
+}
+.shape{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.shape_one{
+    background: linear-gradient(#01579B, #29B6F6);
+    top: -80px;
+    left: -80px;
+  
+}
+.shape_twe{
+    background: linear-gradient(45deg, #E65100, #FFA726);
+    bottom: -90px;
+    right: -60px;
+} 
+
+.login_form{
+   width: 100%;
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.13);
+   color: #fafafa;
+   padding: 50px 35px 50px 35px;
+   border: 2px solid rgba(255,255,255,0.13);
+   border-radius: 0.3rem;
+   box-shadow: 0 0 40px rgba(0,0,0,0.5);
+   backdrop-filter: blur(10px);
+}
+.login_title{
+   text-align: center;
+   font-size: 32px;
+   margin-bottom: 1.5rem;
+}
+
+.form_label{
+    font-size: 16px;
+}
+.form_input{
+    font-size: 14px;
+    border-radius: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fafafa;
+    padding: 0 10px;
+    font-weight: 300;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    display: block;
+}
+.form_input::placeholder{
+    color: #fafafa;
+}
+
+.form_btn{
+     background-color: #fafafa;
+     color: #080710;
+     display: block;
+     margin-top: 2rem;
+     font-size: 18px;
+     font-weight: bold;
+     border-radius: 0.2rem;
+     width: 100%;
+     height: 55px;
+}
